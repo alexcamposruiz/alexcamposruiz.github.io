@@ -1,1 +1,0 @@
-# alexcamposruiz.github.io
