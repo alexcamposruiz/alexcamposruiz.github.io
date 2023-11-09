@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Get Started
+  link: /get-started/
+- name: Learn
+  link: /learn/
+- name: Reference
+  link: /reference/
+- name: Community
+  link: /community/

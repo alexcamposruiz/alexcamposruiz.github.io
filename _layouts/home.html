@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="highlighted-features">
+  <div class="container">
+    <div class="row">
+      {% for feature in site.data.features %}
+      <div class="col-md-3">
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="{{ feature.icon }}"></i>
+          </div>
+          <h3 class="feature-title">{{ feature.title }}</h3>
+          <p class="feature-description">{{ feature.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% comment %}
+Intentionally left blank
+{% endcomment %}

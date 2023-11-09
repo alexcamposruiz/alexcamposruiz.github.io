@@ -1,0 +1,29 @@
+# _config.yml
+
+title: My Jekyll Site
+description: A website with a top navigation bar and highlighted features
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+theme: minima
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "node_modules", "vendor"]
+plugins:
+  - jekyll-paginate
+
+# Navigation
+header_pages:
+  - title: Index
+    url: /
+  - title: Get Started
+    url: /get-started/
+  - title: Learn
+    url: /learn/
+  - title: Reference
+    url: /reference/
+  - title: Community
+    url: /community/

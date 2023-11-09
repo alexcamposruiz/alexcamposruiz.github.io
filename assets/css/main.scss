@@ -1,0 +1,50 @@
+/* This is the main SCSS file for the site */
+
+/* Import the base and layout styles */
+@import "../_sass/base";
+@import "../_sass/layout";
+
+/* Styles for the highlighted features */
+.highlighted-features {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $gray-light;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .highlighted-feature {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 1rem;
+    scroll-snap-align: center;
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Styles for the buttons in the highlighted features */
+.highlighted-feature-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  color: $blue;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
